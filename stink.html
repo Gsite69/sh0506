@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Page</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 686px;
+            height: 386px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            animation: shake 0.5s infinite, glow 1s infinite alternate;
+        }
+        button::before, button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,69,0,0.8), transparent);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            animation: fire 1s infinite alternate;
+            z-index: -1;
+        }
+        button::after {
+            animation-delay: 0.5s;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px red; }
+            to { box-shadow: 0 0 20px orange; }
+        }
+        @keyframes fire {
+            from { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            to { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYmPJvA96gNChqS6IYCI-VXvKt5-GxmyXU8Q&s" alt="Image">
+    <p>Ewww you stink</p>
+    <button onclick="redirect()">SO WHAT!?</button>
+
+    <script>
+        function redirect() {
+            window.location.href = "bath.html";
+        }
+    </script>
+</body>
+</html>

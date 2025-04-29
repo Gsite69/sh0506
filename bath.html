@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bath Invitation</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 686px;
+            height: 386px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sure {
+            background-color: pink;
+            color: white;
+        }
+        .no {
+            background-color: red;
+            color: white;
+        }
+        .sure::before, .sure::after {
+            content: "❤️";
+            margin: 0 5px;
+        }
+        .no::before, .no::after {
+            content: "😡";
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://tr.rbxcdn.com/180DAY-72c2a5d1e8216f93b32d82c141ec265b/420/420/FaceAccessory/Webp/noFilter" alt="Bath Invitation">
+    <p>Let's have a Bath together :))</p>
+    <button class="button sure" onclick="location.href='continue.html'">Sure</button>
+    <button class="button no" onclick="location.href='cry.html'">No!!</button>
+</body>
+</html>

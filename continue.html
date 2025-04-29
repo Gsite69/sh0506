@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 686px;
+            height: 386px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+        .jump-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: jump 1s infinite;
+            text-decoration: none;
+        }
+        .jump-button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.ytimg.com/vi/O5rD9Gma_Z8/maxresdefault.jpg" alt="Jump Image">
+    <h1>COME ON!! JUMP..! I'm waiting UwU</h1>
+    <a href="why.html" class="jump-button">JUMP</a>
+</body>
+</html>
